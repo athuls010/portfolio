@@ -1,0 +1,846 @@
+/* ===================================================================
+   ATHUL S KUMAR — PORTFOLIO (JULIUS.FM STYLE)
+   Clean, Editorial White, Deeply Human & Scientifically Rigorous
+   =================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Caveat:wght@600;700&display=swap');
+
+:root {
+  --ink: #121212;
+  --ink-secondary: #4a4a4a;
+  --muted: #8e8e8e;
+  --muted-text: #767676;
+  --bg: #ffffff;
+  --bg-card: #ffffff;
+  --bg-subtle: #f8f9fa;
+  --bg-hover: #f1f3f5;
+
+  --border: #e9ecef;
+  --border-light: #f1f3f5;
+  --border-hover: #ced4da;
+
+  --accent-blue: #0284c7;
+  --accent-emerald: #059669;
+  --accent-amber: #d97706;
+
+  --col-w: 560px;
+  --card-w: 860px;
+  --gutter: 24px;
+  --radius-sm: 8px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  --font-main: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-hand: 'Caveat', cursive, sans-serif;
+
+  --shadow-subtle: 0 2px 10px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-hover: 0 12px 34px rgba(0, 0, 0, 0.07);
+  --shadow-pill: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-pill-hover: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+  --transition: all 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  overflow-x: hidden;
+  padding-bottom: 96px;
+}
+
+.site-container {
+  max-width: var(--card-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ===================================================================
+   HERO / INTRO SECTION (JULIUS.FM STYLE)
+   =================================================================== */
+.hero-top {
+  padding-top: clamp(48px, 10vw, 110px);
+  padding-bottom: 64px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.intro-content {
+  max-width: var(--col-w);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.intro-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-name {
+  font-size: clamp(32px, 5vw, 42px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.intro-role {
+  font-size: clamp(22px, 3.5vw, 28px);
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: -0.015em;
+  margin-top: 4px;
+}
+
+.intro-bio {
+  font-size: 17.5px;
+  line-height: 1.68;
+  color: var(--ink-secondary);
+}
+
+.intro-bio strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Julius-style Avatar + Handwritten Note */
+.avatar-block {
+  position: relative;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.avatar-circle {
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  background: #f7f7f7;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.avatar-circle:hover .avatar-img {
+  transform: scale(1.05);
+}
+
+.avatar-script-note {
+  position: absolute;
+  bottom: -22px;
+  right: -14px;
+  font-family: var(--font-hand);
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--ink);
+  transform: rotate(-7deg);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Contact Pills Row */
+.contact-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: var(--shadow-pill);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.pill-link:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-pill-hover);
+  transform: translateY(-2px);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.pill-link-primary {
+  background: var(--ink);
+  color: #ffffff;
+  border-color: var(--ink);
+}
+
+.pill-link-primary:hover {
+  background: #2b2b2b;
+  border-color: #2b2b2b;
+  color: #ffffff;
+}
+
+.pill-link-primary .pill-arrow {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.pill-arrow {
+  color: var(--muted);
+  font-size: 13px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.pill-link:hover .pill-arrow {
+  color: var(--ink);
+  transform: translate(2px, -2px);
+}
+
+/* Stats Ribbon */
+.stats-ribbon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-top: 24px;
+}
+
+.ribbon-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.ribbon-val {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.ribbon-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 4px;
+}
+
+.ribbon-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+/* ===================================================================
+   CHAPTERS / SECTIONS (JULIUS.FM STYLE)
+   =================================================================== */
+.chapter {
+  margin-top: 84px;
+}
+
+.chapter-header {
+  margin-bottom: 36px;
+}
+
+.chapter-badge {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.chapter-title {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.chapter-desc {
+  font-size: 16px;
+  color: var(--muted-text);
+  max-width: 620px;
+  margin-top: 6px;
+}
+
+/* ===================================================================
+   EDITORIAL PROJECT CARDS (JULIUS & ROBIN NOGUIER STYLE)
+   =================================================================== */
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  margin-bottom: 36px;
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-hover);
+}
+
+.project-header-bar {
+  padding: 28px 32px 18px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.project-meta-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-org {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted-text);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-years {
+  font-size: 13px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+
+.project-card-heading {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.project-card-desc {
+  font-size: 15.5px;
+  line-height: 1.65;
+  color: var(--ink-secondary);
+  max-width: 720px;
+}
+
+.project-tags-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.p-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  color: var(--ink-secondary);
+  padding: 3px 9px;
+  border-radius: 4px;
+}
+
+.p-tag-highlight {
+  background: #f0fdf4;
+  color: var(--accent-emerald);
+  border-color: rgba(5, 150, 105, 0.2);
+  font-weight: 600;
+}
+
+/* Project Interactive Body */
+.project-card-body {
+  padding: 28px 32px;
+  background: #ffffff;
+}
+
+/* CXR Simulator Layout */
+.cxr-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.cxr-box {
+  background: #020617;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.cxr-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cxr-controls-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.controls-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.controls-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip-btn {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-secondary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.chip-btn:hover {
+  background: var(--bg-hover);
+  color: var(--ink);
+}
+
+.chip-btn.active {
+  background: var(--ink);
+  color: #ffffff;
+  border-color: var(--ink);
+}
+
+.slider-input {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--border);
+  outline: none;
+  cursor: pointer;
+}
+
+.slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--ink);
+  cursor: pointer;
+}
+
+.stats-card-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  text-align: center;
+}
+
+.stats-cell-name {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.stats-cell-num {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--ink);
+  margin-top: 2px;
+}
+
+/* Gait Layout */
+.gait-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.gait-view-box {
+  background: #020617;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gait-canvas-holder {
+  width: 100%;
+  aspect-ratio: 16/10;
+  background: #050b14;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+#gaitCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* SLAM Layout */
+.slam-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.slam-view-box {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===================================================================
+   JULIUS-STYLE TESTIMONIAL / REFERENCE CARD
+   =================================================================== */
+.reference-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 26px 30px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.ref-quote-text {
+  font-size: 15.5px;
+  line-height: 1.68;
+  color: var(--ink-secondary);
+  font-style: italic;
+  margin-bottom: 14px;
+}
+
+.ref-person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ref-person-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.ref-person-role {
+  font-size: 13px;
+  color: var(--muted-text);
+  font-family: var(--font-mono);
+}
+
+/* ===================================================================
+   AREAS OF INTEREST & SKILLS
+   =================================================================== */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.interest-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  transition: var(--transition);
+}
+
+.interest-item:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-subtle);
+}
+
+.interest-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+/* Experience List */
+.exp-row-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exp-card-item {
+  padding: 22px 26px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.exp-card-item:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-subtle);
+}
+
+.exp-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.exp-role-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.exp-org-name {
+  font-size: 15px;
+  color: var(--muted-text);
+}
+
+.exp-date-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.exp-paragraph {
+  font-size: 14.5px;
+  color: var(--ink-secondary);
+  line-height: 1.65;
+}
+
+/* ===================================================================
+   FOOTER (JULIUS.FM STYLE)
+   =================================================================== */
+.site-footer-julius {
+  margin-top: 100px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-handwritten-note {
+  font-family: var(--font-hand);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.footer-credit-line {
+  margin-top: 52px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+/* Command Palette & Toast */
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toast {
+  background: var(--ink);
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cmd-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 15vh;
+}
+
+.cmd-modal-backdrop.active {
+  display: flex;
+}
+
+.cmd-modal {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.cmd-input-wrap {
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-light);
+  gap: 10px;
+}
+
+.cmd-input {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--ink);
+  font-family: var(--font-main);
+  font-size: 15px;
+  outline: none;
+}
+
+.cmd-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 6px;
+}
+
+.cmd-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--ink-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.cmd-item:hover {
+  background: var(--bg-hover);
+  color: var(--ink);
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  .hero-top {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .intro-content {
+    align-items: center;
+  }
+
+  .contact-pills-row {
+    justify-content: center;
+  }
+
+  .stats-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cxr-split, .gait-split, .slam-split, .interests-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .stats-ribbon {
+    grid-template-columns: 1fr;
+  }
+
+  .project-header-bar, .project-card-body {
+    padding: 20px;
+  }
+
+  .pill-link {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}

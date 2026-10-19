@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athul S Kumar — Data Scientist</title>
+  
+  <meta name="description" content="Data scientist dedicated to building AI systems that can reason. Developing machine learning, medical computer vision validation, markerless gait analysis, and SLAM systems at St. John's Research Institute under ICMR.">
+  <meta name="author" content="Athul S Kumar">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Athul S Kumar — Data Scientist">
+  <meta property="og:description" content="Data scientist dedicated to building AI systems that can reason.">
+  <meta property="og:image" content="assets/athul_portrait.webp">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23121212'/><text x='50' y='64' font-size='42' font-family='sans-serif' font-weight='bold' fill='%23ffffff' text-anchor='middle'>AK</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="site-container">
+    <!-- ===================================================================
+         HERO / INTRO SECTION (JULIUS.FM STYLE - NO TOP NAVBAR)
+         =================================================================== -->
+    <header class="hero-top" id="top">
+      <div class="intro-content">
+        <div class="intro-heading">
+          <h1 class="intro-name">Athul S Kumar</h1>
+          <div class="intro-role">Data Scientist</div>
+        </div>
+
+        <p class="intro-bio">
+          Data scientist dedicated to building <strong>AI systems that can reason</strong>. I develop models that go beyond pattern recognition to draw inferences and support real decisions. Passionate about solving real-world health problems by turning complex data into practical, intelligent tools.
+        </p>
+
+        <p class="intro-bio" style="font-size: 16px; margin-top: -6px; color: var(--muted-text);">
+          Based at <strong>St. John’s Research Institute (SJRI)</strong>, Bengaluru, working on national healthcare research programmes under the <strong>Indian Council of Medical Research (ICMR)</strong>. I develop machine learning pipelines for medical imaging (including ILD from HRCT scans) and clinically validate AI screening software for tuberculosis, working closely with clinicians to turn research questions into deployable tools.
+        </p>
+
+        <!-- Julius-style Contact Pills Row -->
+        <div class="contact-pills-row">
+          <a href="mailto:athulskumar010@gmail.com" class="pill-link pill-link-primary">
+            <span>athulskumar010@gmail.com</span>
+            <span class="pill-arrow">↗</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/athulskumar010/" target="_blank" rel="noopener noreferrer" class="pill-link">
+            <span>LinkedIn</span>
+            <span class="pill-arrow">↗</span>
+          </a>
+
+          <button class="pill-link download-resume-btn" title="Download Official Resume PDF">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Resume (PDF)</span>
+          </button>
+
+          <button class="pill-link" id="cmdKTrigger" title="Quick Command Palette (⌘K)">
+            <span style="font-family: var(--font-mono); font-size: 13px;">⌘K</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Circular Photograph with Julius-style Handwritten Note -->
+      <div class="avatar-block">
+        <div class="avatar-circle">
+          <img src="assets/athul_portrait.webp" alt="Athul S Kumar" class="avatar-img" width="146" height="146" loading="eager" fetchpriority="high">
+        </div>
+        <div class="avatar-script-note">
+          <span>Data Scientist @ SJRI 👋</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Quick Stats Ribbon -->
+    <div class="stats-ribbon">
+      <div class="ribbon-cell">
+        <span class="ribbon-val"><span class="counter-val" data-target="1.5">0</span>+ yrs</span>
+        <span class="ribbon-label">Data Science & AI</span>
+        <span class="ribbon-sub">St. John's Research Institute</span>
+      </div>
+
+      <div class="ribbon-cell">
+        <span class="ribbon-val"><span class="counter-val" data-target="1">0</span> paper</span>
+        <span class="ribbon-label">The Lancet Regional Health</span>
+        <span class="ribbon-sub">Lead Author (Under Peer Review)</span>
+      </div>
+
+      <div class="ribbon-cell">
+        <span class="ribbon-val"><span class="counter-val" data-target="2">0</span> platforms</span>
+        <span class="ribbon-label">National Programmes</span>
+        <span class="ribbon-sub">ICMR CAR-MEDTECH & PRAKASH</span>
+      </div>
+
+      <div class="ribbon-cell">
+        <span class="ribbon-val"><span class="counter-val" data-target="4">0</span>+</span>
+        <span class="ribbon-label">Modalities Handled</span>
+        <span class="ribbon-sub">CT, CXR, Sensors, Gait Video</span>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         AREAS OF INTEREST (FROM ATHUL'S PROFILE)
+         =================================================================== -->
+    <section class="chapter" id="interests">
+      <div class="chapter-header">
+        <div class="chapter-badge">Research Focus</div>
+        <h2 class="chapter-title">Areas of Interest</h2>
+        <p class="chapter-desc">Topics where I focus my research, modeling, and engineering efforts:</p>
+      </div>
+
+      <div class="interests-grid">
+        <div class="interest-item">
+          <span class="interest-dot"></span>
+          <span>AI systems that can reason and support clinical decision-making</span>
+        </div>
+        <div class="interest-item">
+          <span class="interest-dot"></span>
+          <span>Medical imaging and computer vision for healthcare</span>
+        </div>
+        <div class="interest-item">
+          <span class="interest-dot"></span>
+          <span>Biomedical knowledge graphs and hypothesis generation</span>
+        </div>
+        <div class="interest-item">
+          <span class="interest-dot"></span>
+          <span>Quantum machine learning</span>
+        </div>
+        <div class="interest-item">
+          <span class="interest-dot"></span>
+          <span>Markerless gait analysis & biomechanics</span>
+        </div>
+        <div class="interest-item">
+          <span class="interest-dot"></span>
+          <span>SLAM and indoor robotics navigation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SELECTED WORK & VALIDATION PROJECTS (JULIUS & ROBIN NOGUIER STYLE)
+         =================================================================== -->
+    <section class="chapter" id="projects">
+      <div class="chapter-header">
+        <div class="chapter-badge">Selected Work</div>
+        <h2 class="chapter-title">Projects & Clinical Deployments</h2>
+        <p class="chapter-desc">
+          Rigorous clinical software validation, national programme deployments, and autonomous systems.
+        </p>
+      </div>
+
+      <!-- PROJECT 1: CLINICAL VALIDATION OF CHEST RADIOGRAPHY AI FOR TB -->
+      <article class="project-card">
+        <div class="project-header-bar">
+          <div class="project-meta-line">
+            <span class="project-org">St. John's Research Institute • ICMR</span>
+            <span class="project-years">2025 – Present</span>
+          </div>
+          <h3 class="project-card-heading">Clinical Validation of AI Software for Chest Radiography Tuberculosis Screening</h3>
+          <p class="project-card-desc">
+            Validated and clinically benchmarked deep learning-based Computer-Aided Detection (CAD) software for pulmonary tuberculosis and thoracic abnormalities across adult cohorts in a high-burden tertiary clinical center. Rather than claiming proprietary base software, this research focused on rigorous clinical validation: evaluating diagnostic concordance against radiologist consensus and composite microbiologic reference standards, analyzing sensitivity/specificity trade-offs across operational cutoff thresholds, and establishing implementation frameworks for hospital workflow integration.
+          </p>
+          <div class="project-tags-bar">
+            <span class="p-tag p-tag-highlight">The Lancet Regional Health (Under Review)</span>
+            <span class="p-tag">AI Software Validation</span>
+            <span class="p-tag">Chest X-Ray CAD</span>
+            <span class="p-tag">Grad-CAM Calibration</span>
+            <span class="p-tag">ROC & Threshold Calibration</span>
+            <span class="p-tag">Diagnostic Concordance</span>
+          </div>
+        </div>
+
+        <!-- Embedded Interactive CXR Validation Sandbox -->
+        <div class="project-card-body">
+          <div class="cxr-split">
+            <div class="cxr-box">
+              <canvas id="cxrCanvas" class="cxr-canvas" width="460" height="460"></canvas>
+            </div>
+
+            <div class="cxr-controls-column">
+              <div class="controls-group">
+                <span class="controls-label">Clinical Pathology Case:</span>
+                <div class="pill-group">
+                  <button class="chip-btn cxr-cond-btn active" data-cond="tb">Active Tuberculosis (TB)</button>
+                  <button class="chip-btn cxr-cond-btn" data-cond="infiltrate">Thoracic Infiltrates</button>
+                  <button class="chip-btn cxr-cond-btn" data-cond="normal">Normal Baseline</button>
+                </div>
+              </div>
+
+              <div class="controls-group">
+                <span class="controls-label">Diagnostic Layers:</span>
+                <div class="pill-group">
+                  <button class="chip-btn active" id="toggleCXRHeatmap">Grad-CAM Heatmap</button>
+                  <button class="chip-btn active" id="toggleCXRGT">Radiologist Consensus Box</button>
+                </div>
+              </div>
+
+              <div class="controls-group">
+                <div class="controls-label">
+                  <span>Operating Cutoff Threshold:</span>
+                  <span class="font-mono" id="cxrThresholdVal" style="color: var(--accent-blue); font-weight: 700;">0.45</span>
+                </div>
+                <input type="range" class="slider-input" id="cxrThresholdSlider" min="0.10" max="0.90" step="0.05" value="0.45">
+                <div style="display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); font-family: var(--font-mono);">
+                  <span>High Sensitivity (Triage)</span>
+                  <span>High Specificity (Rule-In)</span>
+                </div>
+              </div>
+
+              <div class="stats-card-row">
+                <div>
+                  <div class="stats-cell-name">Target Pathology</div>
+                  <div class="stats-cell-num" id="cxrConditionName">Pulmonary TB</div>
+                </div>
+                <div>
+                  <div class="stats-cell-name">Cutoff Setting</div>
+                  <div class="stats-cell-num" id="cxrOperatingMode" style="color: var(--accent-blue);">Balanced Triage</div>
+                </div>
+                <div>
+                  <div class="stats-cell-name">Panel Agreement</div>
+                  <div class="stats-cell-num" id="cxrPanelConcordance" style="color: var(--accent-emerald);">Concordant</div>
+                </div>
+              </div>
+
+              <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+                <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 2px;">
+                  <span style="font-family: var(--font-mono); color: var(--muted);">VALIDATION RESULT</span>
+                  <span style="color: var(--accent-amber); font-weight: 700;" id="cxrClinicalStatus">POSITIVE: SCREENING TRIAGE FLAG</span>
+                </div>
+                <p style="font-size: 13px; color: var(--ink-secondary); line-height: 1.45;" id="cxrFindingsText">
+                  Right upper lobe cavitary lesion with surrounding fibronodular infiltration. High clinical concordance with active pulmonary tuberculosis.
+                </p>
+              </div>
+
+              <div style="height: 110px; background: var(--bg-subtle); border-radius: var(--radius-sm); border: 1px solid var(--border-light); padding: 8px;">
+                <canvas id="rocCanvas" style="width: 100%; height: 100%;"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: MARKERLESS GAIT PATTERN RECOGNITION & KINEMATICS (SEPARATE PROJECT) -->
+      <article class="project-card">
+        <div class="project-header-bar">
+          <div class="project-meta-line">
+            <span class="project-org">St. John's Research Institute</span>
+            <span class="project-years">Active Project</span>
+          </div>
+          <h3 class="project-card-heading">Markerless Gait Analysis & Biomechanics Kinematics</h3>
+          <p class="project-card-desc">
+            Developing an automated markerless computer vision system that extracts 2D/3D gait kinematics from standard monocular video. Computes spatiotemporal gait parameters (cadence, step time, stride length, continuous knee/hip joint flexion angles) for developmental assessment and clinical mobility studies without physical reflective markers.
+          </p>
+          <div class="project-tags-bar">
+            <span class="p-tag">Markerless Gait Analysis</span>
+            <span class="p-tag">2D/3D Kinematics</span>
+            <span class="p-tag">Computer Vision</span>
+            <span class="p-tag">Biomechanics</span>
+            <span class="p-tag">OpenCV & MediaPipe</span>
+          </div>
+        </div>
+
+        <!-- Embedded Interactive Gait Simulator -->
+        <div class="project-card-body">
+          <div class="gait-split">
+            <div class="gait-view-box">
+              <div class="gait-canvas-holder">
+                <canvas id="gaitCanvas"></canvas>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <button class="chip-btn active" id="gaitPlayBtn" style="background: var(--ink); color: #fff;">⏸ Pause</button>
+                <div style="flex: 1; display: flex; align-items: center; gap: 8px;">
+                  <span style="font-size: 11px; font-family: var(--font-mono); color: var(--muted);">SCRUB:</span>
+                  <input type="range" class="slider-input" id="gaitScrubber" min="0" max="100" value="0">
+                </div>
+              </div>
+            </div>
+
+            <div class="cxr-controls-column">
+              <div class="controls-group">
+                <span class="controls-label">Biomechanical Gait Profile:</span>
+                <div class="pill-group">
+                  <button class="chip-btn gait-type-btn active" data-type="normal">Normal Healthy Gait</button>
+                  <button class="chip-btn gait-type-btn" data-type="asymmetric">Antalgic (Asymmetric)</button>
+                  <button class="chip-btn gait-type-btn" data-type="shuffling">Parkinsonian (Shuffling)</button>
+                </div>
+              </div>
+
+              <div class="stats-card-row">
+                <div>
+                  <div class="stats-cell-name">Cadence</div>
+                  <div class="stats-cell-num" id="gaitCadence">112 steps/min</div>
+                </div>
+                <div>
+                  <div class="stats-cell-name">Speed</div>
+                  <div class="stats-cell-num" id="gaitSpeed">1.34 m/s</div>
+                </div>
+                <div>
+                  <div class="stats-cell-name">Stance / Swing</div>
+                  <div class="stats-cell-num" id="gaitStanceRatio">61.4% / 38.6%</div>
+                </div>
+              </div>
+
+              <div style="height: 120px; background: var(--bg-subtle); border-radius: var(--radius-sm); border: 1px solid var(--border-light); padding: 8px;">
+                <div style="font-size: 11px; font-family: var(--font-mono); color: var(--muted); margin-bottom: 2px;">KNEE JOINT FLEXION / EXTENSION TRAJECTORY</div>
+                <canvas id="gaitAngleCanvas" style="width: 100%; height: 95px;"></canvas>
+              </div>
+
+              <p style="font-size: 13px; color: var(--muted-text); line-height: 1.5;">
+                Continuous joint angle trajectories smoothed with Savitzky-Golay filtering. Enables non-invasive biomechanical tracking outside of expensive motion capture facilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 3: INDOOR ROBOTICS SLAM SYSTEM (SEPARATE PROJECT) -->
+      <article class="project-card">
+        <div class="project-header-bar">
+          <div class="project-meta-line">
+            <span class="project-org">Indoor Robotics Research</span>
+            <span class="project-years">Active Project</span>
+          </div>
+          <h3 class="project-card-heading">Simultaneous Localisation and Mapping (SLAM) for Indoor Robotics</h3>
+          <p class="project-card-desc">
+            Developing an autonomous 2D LiDAR and sensor-fusion SLAM system for mobile indoor robots navigating hospital and clinical facility corridors. Constructs real-time 2D metric occupancy grid maps, performs scan-matching odometry, detects loop closures to correct drift, and enables autonomous navigation in dynamic environments without GPS.
+          </p>
+          <div class="project-tags-bar">
+            <span class="p-tag">LiDAR SLAM</span>
+            <span class="p-tag">Occupancy Grid Mapping</span>
+            <span class="p-tag">Pose-Graph Optimization</span>
+            <span class="p-tag">Indoor Robotics</span>
+            <span class="p-tag">Sensor Fusion</span>
+            <span class="p-tag">Python & ROS</span>
+          </div>
+        </div>
+
+        <!-- Embedded Interactive 2D LiDAR SLAM Sandbox -->
+        <div class="project-card-body">
+          <div class="slam-split">
+            <div class="slam-view-box">
+              <div style="background: #090d16; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); aspect-ratio: 4/3; position: relative;">
+                <canvas id="slamCanvas" style="width: 100%; height: 100%; display: block;"></canvas>
+              </div>
+
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 12px; gap: 8px; flex-wrap: wrap;">
+                <button class="chip-btn active" id="slamPlayBtn" style="background: var(--ink); color: #fff;">⏸ Pause Patrol</button>
+                <button class="chip-btn" id="slamResetBtn">↺ Clear Map</button>
+                <div class="pill-group" style="margin-left: auto;">
+                  <button class="chip-btn slam-path-btn active" data-path="loop">Corridor Loop</button>
+                  <button class="chip-btn slam-path-btn" data-path="rooms">Ward Inspection</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cxr-controls-column">
+              <div class="controls-group">
+                <div class="controls-label">
+                  <span>LiDAR Scan Radius:</span>
+                  <span class="font-mono" id="slamRangeVal" style="color: var(--accent-blue); font-weight: 700;">8.0 m</span>
+                </div>
+                <input type="range" class="slider-input" id="slamRangeSlider" min="4.0" max="14.0" step="0.5" value="8.0">
+                <div style="display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); font-family: var(--font-mono);">
+                  <span>Near Field (4m)</span>
+                  <span>Far Hallway (14m)</span>
+                </div>
+              </div>
+
+              <div class="controls-group">
+                <span class="controls-label">LiDAR Laser Beam Density:</span>
+                <div class="pill-group">
+                  <button class="chip-btn slam-beams-btn" data-beams="60">60 Beams</button>
+                  <button class="chip-btn slam-beams-btn active" data-beams="120">120 Beams (360°)</button>
+                  <button class="chip-btn slam-beams-btn" data-beams="180">180 Beams</button>
+                </div>
+              </div>
+
+              <div class="stats-card-row">
+                <div>
+                  <div class="stats-cell-name">Map Coverage</div>
+                  <div class="stats-cell-num" id="slamMapCoverage" style="color: var(--accent-emerald);">86.4%</div>
+                </div>
+                <div>
+                  <div class="stats-cell-name">Pose Uncertainty</div>
+                  <div class="stats-cell-num" id="slamPoseUncertainty" style="color: var(--accent-blue);">±0.03 m</div>
+                </div>
+                <div>
+                  <div class="stats-cell-name">Loop Closures</div>
+                  <div class="stats-cell-num" id="slamLoopClosures">14 Validated</div>
+                </div>
+              </div>
+
+              <div style="background: var(--bg-subtle); padding: 12px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
+                <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 2px;">
+                  <span style="font-family: var(--font-mono); color: var(--muted);">ESTIMATED POSE & SLAM STATE</span>
+                  <span style="color: var(--accent-emerald); font-weight: 700; font-family: var(--font-mono);" id="slamTelemetryPose">x: +4.21m | y: -1.08m | θ: 42°</span>
+                </div>
+                <p style="font-size: 13px; color: var(--ink-secondary); line-height: 1.45; margin-top: 4px;">
+                  Real-time 2D occupancy grid mapping and scan-matching odometry. Raycasts 360° laser scans against hospital corridor walls and doorways to build an obstacle metric map and correct odometry drift.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 4: INTERSTITIAL LUNG DISEASE (ILD) HRCT DEVELOPMENT -->
+      <article class="project-card">
+        <div class="project-header-bar">
+          <div class="project-meta-line">
+            <span class="project-org">St. John's Research Institute • Medical Imaging</span>
+            <span class="project-years">2025 – Present</span>
+          </div>
+          <h3 class="project-card-heading">Development of ML Pipelines for Interstitial Lung Disease (ILD) from HRCT Scans</h3>
+          <p class="project-card-desc">
+            Developed machine learning pipelines for Interstitial Lung Disease (ILD) detection, parenchymal texture pattern quantification, and longitudinal progression monitoring from 3D High-Resolution Computed Tomography (HRCT) scans. Engineered 3D Hounsfield Unit (-1000 to -200 HU) lung windowing, automated fibrosis volumetric feature extraction, and longitudinal delta-progression algorithms across multi-timepoint patient follow-ups.
+          </p>
+          <div class="project-tags-bar">
+            <span class="p-tag">ML Pipeline Development</span>
+            <span class="p-tag">HRCT 3D DICOM</span>
+            <span class="p-tag">SimpleITK</span>
+            <span class="p-tag">Longitudinal Progression</span>
+            <span class="p-tag">Feature Engineering</span>
+          </div>
+        </div>
+
+        <div class="project-card-body">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+              <div style="background: #020617; border-radius: var(--radius-sm); padding: 8px;">
+                <span style="font-size: 11px; font-family: var(--font-mono); color: #38bdf8;">BASELINE (M0)</span>
+                <canvas id="hrctBaselineCanvas" style="width: 100%; aspect-ratio: 1/1;"></canvas>
+              </div>
+              <div style="background: #020617; border-radius: var(--radius-sm); padding: 8px;">
+                <span style="font-size: 11px; font-family: var(--font-mono); color: #f59e0b;">FOLLOW-UP SCAN</span>
+                <canvas id="hrctFollowupCanvas" style="width: 100%; aspect-ratio: 1/1;"></canvas>
+              </div>
+            </div>
+
+            <div>
+              <div class="pill-group" style="margin-bottom: 14px;">
+                <button class="chip-btn active" id="hrctMonth6Btn">Month +6 Follow-Up</button>
+                <button class="chip-btn" id="hrctMonth12Btn">Month +12 Follow-Up</button>
+                <button class="chip-btn active" id="hrctToggleOverlay">Fibrosis Mask</button>
+              </div>
+
+              <div class="stats-card-row">
+                <div>
+                  <div class="stats-cell-name">Target Modality</div>
+                  <div class="stats-cell-num">HRCT 3D DICOM</div>
+                </div>
+                <div>
+                  <div class="stats-cell-name">Window Setting</div>
+                  <div class="stats-cell-num" style="color: var(--accent-blue);">-1000 to -200 HU</div>
+                </div>
+                <div>
+                  <div class="stats-cell-name">Tracking State</div>
+                  <div class="stats-cell-num" id="hrctDeltaScore" style="color: var(--accent-emerald);">Month +6 Follow-Up</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 5: ICMR PRAKASH NATIONAL PROGRAMME DECISION-SUPPORT AI SYSTEM -->
+      <article class="project-card">
+        <div class="project-header-bar">
+          <div class="project-meta-line">
+            <span class="project-org">ICMR PRAKASH Programme</span>
+            <span class="project-years">Production Deployment</span>
+          </div>
+          <h3 class="project-card-heading">ICMR PRAKASH National Decision-Support & Monitoring AI System</h3>
+          <p class="project-card-desc">
+            Designed, developed, and deployed the first integrated real-time monitoring and clinical decision-support AI system for the multi-site national ICMR PRAKASH programme. Features district-level approval workflows, milestone tracking, and KPI monitoring engineered to scale from district to state and national tiers.
+          </p>
+          <div class="project-tags-bar">
+            <span class="p-tag">National Scale</span>
+            <span class="p-tag">Decision-Support AI System</span>
+            <span class="p-tag">Clinical Quality Control</span>
+            <span class="p-tag">Python & SQL</span>
+            <span class="p-tag">RBAC Security</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECTS 6 & 7: QUANTUM ML & BIOMEDICAL KNOWLEDGE GRAPHS -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <article class="project-card" style="margin-bottom: 0;">
+          <div class="project-header-bar" style="border-bottom: none;">
+            <div class="project-meta-line">
+              <span class="project-org">Quantum AI Research</span>
+            </div>
+            <h3 class="project-card-heading" style="font-size: 18px;">Quantum CNN for Skin Cancer Classification</h3>
+            <p class="project-card-desc" style="font-size: 14px;">
+              Developed a hybrid Quantum Convolutional Neural Network (QCNN) using TensorFlow Quantum for skin cancer dermoscopic classification, achieving competitive accuracy with fewer parameters than classical CNN and QNN baselines.
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card" style="margin-bottom: 0;">
+          <div class="project-header-bar" style="border-bottom: none;">
+            <div class="project-meta-line">
+              <span class="project-org">Graph Analytics</span>
+            </div>
+            <h3 class="project-card-heading" style="font-size: 18px;">Biomedical Knowledge Graph Construction</h3>
+            <p class="project-card-desc" style="font-size: 14px;">
+              Constructed a biomedical knowledge graph from NCBI datasets using GraphXR and Python to reveal latent gene–disease–treatment associations and support clinical hypothesis generation.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PUBLICATIONS & PEER REVIEW
+         =================================================================== -->
+    <section class="chapter" id="publications">
+      <div class="chapter-header">
+        <div class="chapter-badge">Scientific Publications</div>
+        <h2 class="chapter-title">Publications</h2>
+      </div>
+
+      <div class="project-card" style="padding: 28px 32px;">
+        <div class="project-meta-line">
+          <span class="project-org" style="color: var(--accent-blue);">The Lancet Regional Health – Southeast Asia</span>
+          <span class="p-tag p-tag-highlight">Under Peer Review</span>
+        </div>
+        <h3 class="project-card-heading" style="font-size: 19px; line-height: 1.45;">
+          Performance and Implementation Considerations of an AI-Based Chest Radiography Tool for Tuberculosis Screening in a High-Burden Tertiary Care Setting in India
+        </h3>
+        <p style="font-size: 14px; color: var(--muted-text); margin-bottom: 12px;">
+          <strong>Athul S. Kumar</strong>, and Clinical Research Team • St. John's Research Institute, Division of Nutrition
+        </p>
+        <p class="project-card-desc" style="background: var(--bg-subtle); padding: 14px 18px; border-radius: var(--radius-sm); border: 1px solid var(--border-light); font-size: 14px; margin-bottom: 14px;">
+          <strong>Abstract:</strong> Evaluation of a deep learning-based computer-aided detection (CAD) tool for pulmonary tuberculosis screening across adult cohorts in a high-burden tertiary clinical center in India. Evaluates diagnostic concordance against composite microbiologic and radiologist reference standards, sensitivity/specificity operational trade-off curves, discordance analysis, and practical implementation frameworks for hospital integration.
+        </p>
+        <button class="pill-link pill-link-primary" id="copyBibtexBtn" style="font-size: 13px; padding: 7px 16px;">
+          <span>Copy BibTeX Citation</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PROFESSIONAL EXPERIENCE & EDUCATION (EDITORIAL RESUME)
+         =================================================================== -->
+    <section class="chapter" id="experience">
+      <div class="chapter-header">
+        <div class="chapter-badge">Career & Credentials</div>
+        <h2 class="chapter-title">Professional Experience</h2>
+      </div>
+
+      <div class="exp-row-list">
+        <div class="exp-card-item">
+          <div class="exp-top-row">
+            <div>
+              <span class="exp-role-name">Senior Research Assistant (Data Science)</span>
+              <span class="exp-org-name"> • St. John’s Research Institute</span>
+            </div>
+            <span class="exp-date-label">Jun 2025 – Present</span>
+          </div>
+          <p class="exp-paragraph">
+            Lead data science and analytics for the ICMR CAR-MEDTECH programme, supporting large-scale, multi-site healthcare research deployments across India. Designed and deployed the first integrated real-time monitoring and decision-support AI system for the ICMR PRAKASH programme. Developed machine learning pipelines for Interstitial Lung Disease (ILD) detection from HRCT scans and clinically validated an AI-based radiological screening software tool for tuberculosis (submitted to <em>The Lancet Regional Health</em>). Currently developing markerless gait analysis and SLAM systems for indoor robotics. Works closely with clinicians and domain experts to turn research questions into deployable tools.
+          </p>
+        </div>
+
+        <div class="exp-card-item">
+          <div class="exp-top-row">
+            <div>
+              <span class="exp-role-name">Data Science Intern</span>
+              <span class="exp-org-name"> • St. John’s Research Institute</span>
+            </div>
+            <span class="exp-date-label">Jan 2025 – May 2025</span>
+          </div>
+          <p class="exp-paragraph">
+            Built an image-based computer vision system for automated, non-invasive infant height estimation to support growth-monitoring research. Engineered FFT-based features from tri-axial accelerometer signals and built an optimized Random Forest classifier to recognize infant activity states. Designed a secure data repository for breast cancer laboratory records with role-based access control (RBAC).
+          </p>
+        </div>
+      </div>
+
+      <!-- Education & Academic Reference (Julius Quote Style) -->
+      <div style="margin-top: 48px;">
+        <div class="chapter-badge">Academic Foundations</div>
+        <h3 class="chapter-title" style="font-size: 22px;">Education & Reference</h3>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 18px;">
+          <div class="exp-card-item">
+            <div class="exp-role-name">Master of Science in Data Science</div>
+            <div class="exp-org-name">Christ University, Bengaluru</div>
+            <div class="exp-date-label">May 2025</div>
+            <div style="margin-top: 14px;">
+              <div class="exp-role-name" style="font-size: 15px;">Bachelor of Computer Applications in Data Science</div>
+              <div class="exp-org-name">Amrita Vishwa Vidyapeetham</div>
+              <div class="exp-date-label">April 2023</div>
+            </div>
+          </div>
+
+          <!-- Reference in Julius.fm recommendation style -->
+          <div class="reference-card">
+            <p class="ref-quote-text">
+              "Collaborating on national ICMR health deployments, AI model validations, and pediatric growth monitoring studies at St. John's Research Institute."
+            </p>
+            <div class="ref-person">
+              <div>
+                <div class="ref-person-title">Dr. Prashanth Thankachan</div>
+                <div class="ref-person-role">Professor, Division of Nutrition • St. John's Research Institute</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         TECHNICAL EXPERTISE MATRIX
+         =================================================================== -->
+    <section class="chapter" id="expertise">
+      <div class="chapter-header">
+        <div class="chapter-badge">Toolkit</div>
+        <h2 class="chapter-title">Technical Expertise</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+        <div class="exp-card-item">
+          <div style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">Programming</div>
+          <div style="font-size: 13.5px; color: var(--ink-secondary); line-height: 1.6;">Python, R, SQL, Git, Bash</div>
+        </div>
+
+        <div class="exp-card-item">
+          <div style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">Machine Learning</div>
+          <div style="font-size: 13.5px; color: var(--ink-secondary); line-height: 1.6;">Supervised Learning, Random Forest, CNN, QCNN, Feature Engineering, Model Validation</div>
+        </div>
+
+        <div class="exp-card-item">
+          <div style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">Vision & Robotics</div>
+          <div style="font-size: 13.5px; color: var(--ink-secondary); line-height: 1.6;">Medical Image Analysis (CT, X-Ray), Markerless Gait Analysis, SLAM, OpenCV, SimpleITK</div>
+        </div>
+
+        <div class="exp-card-item">
+          <div style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">Statistics & Signal Analytics</div>
+          <div style="font-size: 13.5px; color: var(--ink-secondary); line-height: 1.6;">Exploratory Data Analysis, Hypothesis Testing, Longitudinal Analysis, FFT Signal Processing</div>
+        </div>
+
+        <div class="exp-card-item">
+          <div style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">Visualisation & Systems</div>
+          <div style="font-size: 13.5px; color: var(--ink-secondary); line-height: 1.6;">Dash, Tableau, Power BI, Streamlit, Matplotlib, Seaborn</div>
+        </div>
+
+        <div class="exp-card-item">
+          <div style="font-size: 14px; font-weight: 700; margin-bottom: 8px;">Frameworks & Tools</div>
+          <div style="font-size: 13.5px; color: var(--ink-secondary); line-height: 1.6;">TensorFlow, TensorFlow Quantum, GraphXR, Docker, SimpleITK</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         FOOTER & CONTACT (JULIUS.FM STYLE)
+         =================================================================== -->
+    <footer class="site-footer-julius" id="contact">
+      <div class="footer-handwritten-note">
+        Open to collaborating with researchers, clinicians, and engineers. ✍️
+      </div>
+
+      <div class="contact-pills-row" style="justify-content: center;">
+        <a href="mailto:athulskumar010@gmail.com" class="pill-link pill-link-primary">
+          <span>athulskumar010@gmail.com</span>
+          <span class="pill-arrow">↗</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/athulskumar010/" target="_blank" rel="noopener noreferrer" class="pill-link">
+          <span>LinkedIn</span>
+          <span class="pill-arrow">↗</span>
+        </a>
+
+        <button class="pill-link download-resume-btn">
+          <span>Download Resume (PDF)</span>
+          <span class="pill-arrow">↓</span>
+        </button>
+      </div>
+
+      <div class="footer-credit-line">
+        Athul S Kumar • Bengaluru, Karnataka • St. John's Research Institute
+      </div>
+    </footer>
+  </div>
+
+  <!-- Command Palette Modal -->
+  <div class="cmd-modal-backdrop" id="cmdModal" role="dialog" aria-modal="true" aria-label="Command Palette">
+    <div class="cmd-modal">
+      <div class="cmd-input-wrap">
+        <input type="text" class="cmd-input" id="cmdInput" placeholder="Type a command or jump to section..." autocomplete="off">
+        <span style="font-family: var(--font-mono); font-size: 11px; color: var(--muted); background: var(--bg-subtle); padding: 2px 6px; border-radius: 4px;">ESC</span>
+      </div>
+      <div class="cmd-list" id="cmdList"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/clinical-labs.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
